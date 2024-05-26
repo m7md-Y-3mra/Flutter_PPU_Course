@@ -36,11 +36,11 @@ class SettingsItemsList extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.indigo.withOpacity(0.4),
-            blurRadius: 20.0, // soften the shadow
-            spreadRadius: 0.0, //extend the shadow
+            blurRadius: 20.0,
+            spreadRadius: 0.0,
             offset: Offset(
-              5.0, // Move to right 10  horizontally
-              5.0, // Move to bottom 10 Vertically
+              5.0,
+              5.0,
             ),
           )
         ],
