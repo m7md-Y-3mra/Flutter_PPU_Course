@@ -74,16 +74,16 @@ class ProfileCard extends StatelessWidget {
   }
 
   Widget secondRow() {
-    Widget InfoChip(String firstText, String secondText) {
+    Widget InfoChip(String label, String value) {
       return Column(
         children: [
           Text(
-            firstText,
+            label,
             style: TextStyle(
                 fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold),
           ),
           Text(
-            secondText,
+            value,
             style: TextStyle(color: Colors.white),
           )
         ],

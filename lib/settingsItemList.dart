@@ -30,7 +30,7 @@ class SettingsItemsList extends StatelessWidget {
     );
   }
 
-  Widget SettingsItem(IconData icon, String firstText, String secondText, bg) {
+  Widget SettingsItem(IconData icon, String label, String description, bg) {
     return Container(
       decoration: BoxDecoration(
         boxShadow: [
@@ -59,8 +59,8 @@ class SettingsItemsList extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            title: Text(firstText),
-            subtitle: Text(secondText),
+            title: Text(label),
+            subtitle: Text(description),
             trailing: Icon(
               Icons.arrow_forward_ios,
               size: 15,
