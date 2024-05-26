@@ -5,7 +5,7 @@ class ProfileCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 8,
-      color: Colors.blue,
+      color: Colors.blue[600],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Padding(
         padding: EdgeInsets.all(16),
