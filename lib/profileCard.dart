@@ -3,31 +3,22 @@ import 'package:flutter/material.dart';
 class ProfileCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-          color: Colors.blue[600],
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(.5),
-              blurRadius: 10.0, // soften the shadow
-              spreadRadius: 0.0, //extend the shadow
-              offset: Offset(
-                5.0, // Move to right 10  horizontally
-                5.0, // Move to bottom 10 Vertically
-              ),
-            )
+    return Card(
+      elevation: 8,
+      color: Colors.blue,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      child: Padding(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            firstRow(),
+            SizedBox(
+              height: 10,
+            ),
+            secondRow()
           ],
-          borderRadius: BorderRadius.all(Radius.circular(20))),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          firstRow(),
-          SizedBox(
-            height: 10,
-          ),
-          secondRow()
-        ],
+        ),
       ),
     );
   }
