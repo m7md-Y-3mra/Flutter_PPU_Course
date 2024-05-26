@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
               style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold)),
         ),
         body: Container(
+          color: Colors.white,
           margin: EdgeInsets.symmetric(horizontal: 15),
           child: Column(
             children: [ProfileCard(), OptionsRow(), SettingsItemsList()],

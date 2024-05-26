@@ -9,22 +9,22 @@ class SettingsItemsList extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SettingsItem(Icons.location_on, "Address",
-              "Ensure your harvesting address", Colors.purple[400]),
+              "Ensure your harvesting address", Colors.deepPurple[300]),
           SizedBox(
             height: 22,
           ),
           SettingsItem(Icons.lock, "Privacy", "System permission change",
-              Colors.pink[300]),
+              Colors.pinkAccent[200]),
           SizedBox(
             height: 22,
           ),
-          SettingsItem(Icons.layers, "General",
-              "Basic functional SettingsItemsList", Colors.yellow[600]),
+          SettingsItem(Icons.layers, "General", "Basic functional Settings",
+              Colors.yellow[600]),
           SizedBox(
             height: 22,
           ),
           SettingsItem(Icons.notifications, "Notification",
-              "Take over the news in time", Colors.teal[300]),
+              "Take over the news in time", Colors.tealAccent[700]),
         ],
       ),
     );
@@ -59,11 +59,21 @@ class SettingsItemsList extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            title: Text(label),
-            subtitle: Text(description),
+            title: Text(
+              label,
+              style: TextStyle(fontWeight: FontWeight.w900),
+            ),
+            subtitle: Text(
+              description,
+              style: TextStyle(
+                  color: Colors.black26,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
+            ),
             trailing: Icon(
               Icons.arrow_forward_ios,
               size: 15,
+              color: Colors.black26,
             ),
           )),
     );

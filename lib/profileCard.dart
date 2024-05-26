@@ -5,7 +5,7 @@ class ProfileCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 8,
-      color: Colors.blue[600],
+      color: Colors.blue,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Padding(
         padding: EdgeInsets.all(16),
@@ -51,7 +51,7 @@ class ProfileCard extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
-                      fontWeight: FontWeight.bold),
+                      fontWeight: FontWeight.w900),
                 ),
                 SizedBox(
                   width: 15,
@@ -65,7 +65,10 @@ class ProfileCard extends StatelessWidget {
             ),
             Text(
               "A trendsetter",
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(
+                  color: Colors.white70,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
             )
           ],
         )

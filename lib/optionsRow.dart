@@ -41,11 +41,12 @@ class OptionsRow extends StatelessWidget {
   Widget option(IconData icon, String label) {
     return Column(children: [
       CircleAvatar(
-        radius: 23,
-        backgroundColor: Colors.grey[200],
+        radius: 22,
+        backgroundColor: Colors.grey[100],
         child: Icon(
           icon,
-          size: 25,
+          size: 23,
+          color: Colors.black,
         ),
       ),
       Text(label)
